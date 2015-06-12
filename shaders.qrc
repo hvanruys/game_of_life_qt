@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>vshader.glsl</file>
+        <file>fshader.glsl</file>
+        <file>automata.fsh</file>
+        <file>automata.vsh</file>
+    </qresource>
+</RCC>
