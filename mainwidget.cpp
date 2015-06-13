@@ -51,6 +51,7 @@
 MainWidget::MainWidget(QWidget *parent) :
     QOpenGLWidget(parent)
 {
+    setGeometry(0, 0, 900, 900);
     counter = 0;
 }
 
