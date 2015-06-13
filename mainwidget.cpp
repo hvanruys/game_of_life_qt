@@ -159,10 +159,11 @@ void MainWidget::paintGL()
 
     }
 
-    QPainter painter;
-    painter.begin(this);
-    painter.beginNativePainting();
+//    QPainter painter;
+//    painter.begin(this);
+//    painter.beginNativePainting();
 
+    makeCurrent();
     glViewport(0, 0, this->width(), this->height());
 
     glClearColor(0.8f, 0.0f, 0.0f, 1.0f);
@@ -187,8 +188,8 @@ void MainWidget::paintGL()
 
     glDrawArrays(GL_TRIANGLES, 0, 6);
 
-    painter.endNativePainting();
-    painter.end();
+//    painter.endNativePainting();
+//    painter.end();
 
     //qDebug() << QString("Counter = %1").arg(counter);
     counter++;

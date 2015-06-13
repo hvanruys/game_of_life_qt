@@ -91,8 +91,6 @@ private:
     GLuint uniform_cell_height;
 
     long counter;
-
-
 };
 
 #endif // MAINWIDGET_H
