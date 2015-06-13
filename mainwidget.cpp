@@ -378,3 +378,15 @@ bool MainWidget::checkFramebufferStatus()
         return false;
     }
 }
+
+void MainWidget::keyPressEvent(QKeyEvent *event)
+{
+
+    switch (event->key()) {
+    case Qt::Key_Escape:
+        close();
+        break;
+     default:
+        break;
+     }
+}
